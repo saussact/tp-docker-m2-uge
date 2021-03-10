@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  app:
+    build: ../dockerfile/
+    ports:
+      - 8089:8080
+
+  wordpress:
+    image: wordpress
+    ports:
+      - 8090:80
+    environment:
+      WORDPRESS_DB_PASSWORD: example
+    volumes:
+      - wordpress:/var/www/html
+    networks:
+      - web
+
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    volumes:
+      - mysql:/var/lib/mysql
+    networks:
+      - web
+
+volumes:
+  wordpress:
+    driver: local
+  mysql:
+    driver: local
+networks:
+  web:
+    driver: bridge

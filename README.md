@@ -215,5 +215,26 @@ Ouvrez un navigateur : localhost:8088
 
 Qu'est ce qui est écrit?
 
+Arretez vos dockers.
+
 **NB** : Pour toute modification du dockerfile, pensez à bien relancer 'docker build'
+
+### 5. Docker Compose
+
+Objectif : On revient au serveur wordpress, ou a fait pleins de chose manuel (cf 3.), Ici on va automatiser tout ca dans un docker compose.
+--> On aussi lancer le dockerfile qu'on a crée juste avant.
+
+Aller dans le repertoire dockercompose
+
+Expliquer ce que vous comprennez des lignes et faire le liens avec ce qui a été fait au au chap 3.
+
+Lancer `docker-compose` pour regarder les différentes commandes.
+
+Dans le répertoire dockercompose, lancer `docker-compose up`.
+
+Aller sur http://localhost:8090/, qu'avez vous?
+Aller sur http://localhost:8089/, qu'avez vous?
+
+Dans le terminal vous voyez des logs ? vous les comprennez?
+Dans un nouveau terminal lancer `docker ps` qu'avez vous ? ca vous semble cohérent?
 
