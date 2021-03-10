@@ -5,7 +5,7 @@
 2. [First step](#2-first-step)
 3. [Découverte](#3-découverte)
 4. [Dockerfile](#4-dockerfile)
-5. [Docker Compose](#5-dockercompose)
+5. [Docker Compose](#5-docker-compose)
 
 
 ## 1. Installation
