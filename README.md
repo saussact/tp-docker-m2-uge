@@ -186,13 +186,13 @@ J'espère que vous etes capable de relancer WP tout seul :)
 
 ### 4. Dockerfile
 
-Aller dans le repertoire ./dockerfile/
+Allez dans le repertoire ./dockerfile/
 
 Ouvrir le fichier dockerfile. Que veulent dire les lignes ? (NB : google is your friend) 
 
 Lancer le build du docker file : 
 
-`docker build -t tsaussac/node-web-app .`
+`docker build -t tsaussac/node-app .`
 
 Vous venez normalement de créer une image docker ! Good Job 
 
@@ -200,9 +200,14 @@ Vérifier quelle existe. (docker images)
 
 Maintenant vous pouvez lancer le docker : 
 
-`docker run -p 8088:8080 -d tsaussac/node-web-app`
+`docker run -p 8088:8080 -d tsaussac/node-app`
 
-Ouvrez un navigateur : localhost:8080 
+vérifier que le conteneur est bien lancé.
+
+`docker ps`
+
+
+Ouvrez un navigateur : localhost:8088
 
 Qu'est ce qui est écrit?
 
