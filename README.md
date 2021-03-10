@@ -186,6 +186,10 @@ J'espère que vous etes capable de relancer WP tout seul :)
 
 ### 4. Dockerfile
 
+Objectif : 
+Créer une image docker qui fait tourner une petite app node. 
+
+
 Allez dans le repertoire ./dockerfile/
 
 Ouvrir le fichier dockerfile. Que veulent dire les lignes ? (NB : google is your friend) 
