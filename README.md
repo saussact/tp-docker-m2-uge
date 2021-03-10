@@ -65,15 +65,15 @@ Quelle différence etre un conteneur et une image Docker ?
 ## 3. Découverte
 
 
-$ docker ps -a
+`$ docker ps -a`
 
 Normalement on voit le docker hello world
 
-$ docker run -it --rm ubuntu:xenial /bin/bash
+`$ docker run -it --rm ubuntu:xenial /bin/bash`
 
 Puis depuis un autre terminal on lance :
 
-$ docker ps
+`$ docker ps`
 
 Quelle est la différence par rapport à tout à l'heure ?
 
@@ -85,11 +85,11 @@ Que remarque-t-on ?
 
 Puis on quite le conteneur :
 
-# exit
+`# exit`
 
 Puis à nouveau 
 
-$ docker ps -a
+`$ docker ps -a`
 
 Que remarque-t-on ? à quoi est-ce dû ?
 
@@ -183,7 +183,7 @@ Quelles sont les différences? c'est normal?
 
 J'espère que vous etes capable de relancer WP tout seul :)
 
-### 4. Dockerfile
+## 4. Dockerfile
 
 Objectif : 
 Créer une image docker qui fait tourner une petite app node. 
@@ -218,7 +218,7 @@ Arretez vos dockers.
 
 **NB** : Pour toute modification du dockerfile, pensez à bien relancer 'docker build'
 
-### 5. Docker Compose
+## 5. Docker Compose
 
 Objectif : On revient au serveur wordpress, ou a fait pleins de chose manuel (cf 3.), Ici on va automatiser tout ca dans un docker compose.
 --> On aussi lancer le dockerfile qu'on a crée juste avant.
