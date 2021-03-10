@@ -1,10 +1,11 @@
 # TP Docker M2 UGE  2021 - Module DevOps
 
 # Table of Contents
-1. [Installation](1-installation)
+1. [Installation](#1-installation)
 2. [First step](#2-first-step)
 3. [Découverte](#3-découverte)
 4. [Dockerfile](#4-dockerfile)
+5. [Docker Compose](#5-dockercompose)
 
 
 ## 1. Installation
