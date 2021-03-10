@@ -15,7 +15,7 @@ Pour vérifier que l'installation est bonne :
 
 ## 2. First step
 
-###a. Découverte
+### a. Découverte
 
 `$ docker ps -a`
 
@@ -44,7 +44,7 @@ Puis à nouveau
 
 Qu'est ce que tu remarques ?
 
-####b. Gestion des images docker
+### b. Gestion des images docker
 
 `$ docker images`
 
@@ -62,9 +62,8 @@ Que fais cette commande ?
 
 Quelle différence etre un conteneur et une image Docker ?
 
-## 3. 
-Découverte
-==========
+## 3. Découverte
+
 
 $ docker ps -a
 
@@ -80,7 +79,7 @@ Quelle est la différence par rapport à tout à l'heure ?
 
 Dans le conteneur on lance :
 
-# ps faux
+`# ps faux`
 
 Que remarque-t-on ?
 
