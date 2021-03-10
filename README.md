@@ -1,7 +1,7 @@
 # TP Docker M2 UGE  2021 - Module DevOps
 
 # Table of Contents
-1. [1. Installation](#1. Installation)
+1. [1. Installation](#1.-Installation)
 2. [First step](#example2)
 3. [Third Example](#third-example)
 4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
