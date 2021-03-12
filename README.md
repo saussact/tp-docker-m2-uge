@@ -1,5 +1,30 @@
 # TP Docker M2 UGE  2021 - Module DevOps
 
+# Table of Contents
+0. [Introduction](#0-les-conteneurs-cest-quoi-)
+1. [Installation](#1-installation)
+2. [First step](#2-first-step)
+3. [Découverte](#3-découverte)
+4. [Dockerfile](#4-dockerfile)
+5. [Docker Compose](#5-docker-compose)
+
+## Rendu :
+
+Repondre à l'ensemble des questions posés. Ce TP servira de cours, c'est à vous d'aller chercher les notions. Pour comprendre les thématiques abordés.
+Rendre le compte rendu qui vous servira de (cours / fiche de révision) du TP avant mardi 16 mars 23h59.
+
+Vous pouvez créer un branche via master exemple : feature/<NomPrenom>
+
+## 0. Les conteneurs c'est quoi ?
+
+Faire un schéma rapide pour comprendre et expliquer la différence entre conteneur et VM ? (3' à 5'). https://www.youtube.com/watch?v=caXHwYC3tq8
+
+C'est quoi un micro-service ? https://youtu.be/ucHwp1jUS2w
+
+Quel est l'avantage d'utiliser les conteneurs dans une approche Microservice?
+
+(PS: C'est quoi de regarder des videos sur youtube en cours?)
+
 ## 1. Installation
 
 Au vu de l'evolution TRES rapide de docker, l'ideal est de ce rendre sur la doc officiel de Docker :
@@ -15,7 +40,7 @@ Pour vérifier que l'installation est bonne :
 
 ## 2. First step
 
-###a. Découverte
+### a. Découverte
 
 `$ docker ps -a`
 
@@ -44,7 +69,7 @@ Puis à nouveau
 
 Qu'est ce que tu remarques ?
 
-####b. Gestion des images docker
+### b. Gestion des images docker
 
 `$ docker images`
 
@@ -61,59 +86,6 @@ Que fais cette commande ?
 `$ docker ps -a`
 
 Quelle différence etre un conteneur et une image Docker ?
-
-## 3. 
-Découverte
-==========
-
-$ docker ps -a
-
-Normalement on voit le docker hello world
-
-$ docker run -it --rm ubuntu:xenial /bin/bash
-
-Puis depuis un autre terminal on lance :
-
-$ docker ps
-
-Quelle est la différence par rapport à tout à l'heure ?
-
-Dans le conteneur on lance :
-
-# ps faux
-
-Que remarque-t-on ?
-
-Puis on quite le conteneur :
-
-# exit
-
-Puis à nouveau 
-
-$ docker ps -a
-
-Que remarque-t-on ? à quoi est-ce dû ?
-
-Gestion des images
-==================
-
-$ docker images
-
-Que nous retourne cette commande ?
-
-
-$ docker search mysql
-
-
-$ docker images
-
-$ docker pull mysql
-
-$ docker images
-
-$ docker ps -a
-
-Quelle est la différence entre un conteneur et une image ?
 
 ## 3. Déployer un Wordpress / Jouer avec les images
 
@@ -184,7 +156,7 @@ Quelles sont les différences? c'est normal?
 
 J'espère que vous etes capable de relancer WP tout seul :)
 
-### 4. Dockerfile
+## 4. Dockerfile
 
 Objectif : 
 Créer une image docker qui fait tourner une petite app node. 
@@ -219,7 +191,7 @@ Arretez vos dockers.
 
 **NB** : Pour toute modification du dockerfile, pensez à bien relancer 'docker build'
 
-### 5. Docker Compose
+## 5. Docker Compose
 
 Objectif : On revient au serveur wordpress, ou a fait pleins de chose manuel (cf 3.), Ici on va automatiser tout ca dans un docker compose.
 --> On aussi lancer le dockerfile qu'on a crée juste avant.
