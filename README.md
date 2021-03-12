@@ -118,27 +118,6 @@ Puis à nouveau
 
 Que remarque-t-on ? à quoi est-ce dû ?
 
-Gestion des images
-==================
-
-$ docker images
-
-Que nous retourne cette commande ?
-
-
-$ docker search mysql
-
-
-$ docker images
-
-$ docker pull mysql
-
-$ docker images
-
-$ docker ps -a
-
-Quelle est la différence entre un conteneur et une image ?
-
 ## 3. Déployer un Wordpress / Jouer avec les images
 
 
