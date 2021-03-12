@@ -132,11 +132,12 @@ https://hub.docker.com/_/wordpress/
 
 Dans quel ordre devont nous démarrer nos services ?
 
-`$ docker run -it --rm --net web -v mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw --name mysql -d mysql:latest`
+`$ docker run -it --rm --net web -v mysql:/var/lib/mysql -e MYSQL_DATABASE=wordpressdb -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wppassword -e MYSQL_ROOT_PASSWORD=root --name mysql -d mysql:latest`
+
 
 Vérifier que le conteneur MySQL est bien lancé :)
 
-`$ docker run -it --net web --rm -v wordpress:/var/www/html -e WORDPRESS_DB_PASSWORD=my-secret-pw -p 8090:80 --name wordpress -d wordpress:latest`
+`$ docker run -it --net web --rm -v wordpress:/var/www/html -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=wppassword -e WORDPRESS_DB_NAME=wordpressdb -p 8090:80 --name wordpress -d wordpress:latest`
 
 Vérifier que le conteneur WP est bien lancé :)
 
