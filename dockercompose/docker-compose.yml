@@ -11,7 +11,10 @@ services:
     ports:
       - 8090:80
     environment:
-      WORDPRESS_DB_PASSWORD: example
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: exampledb
     volumes:
       - wordpress:/var/www/html
     networks:
@@ -20,7 +23,10 @@ services:
   mysql:
     image: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_DATABASE: exampledb
+      MYSQL_ROOT_PASSWORD: root
     volumes:
       - mysql:/var/lib/mysql
     networks:
