@@ -8,6 +8,8 @@ services:
 
   wordpress:
     image: wordpress
+    depends_on:
+      - mysql
     ports:
       - 8090:80
     environment:
