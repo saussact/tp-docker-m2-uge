@@ -1,12 +1,28 @@
 # TP Docker M2 UGE  2021 - Module DevOps
 
 # Table of Contents
+0. [Introduction](0-les-conteneurs-c-est-quoi-?)
 1. [Installation](#1-installation)
 2. [First step](#2-first-step)
 3. [Découverte](#3-découverte)
 4. [Dockerfile](#4-dockerfile)
 5. [Docker Compose](#5-docker-compose)
 
+## Rendu :
+
+Repondre à l'ensemble des questions posés. Ce TP servira de cours, c'est à vous d'aller chercher les notions. Pour comprendre les thématiques abordés.
+Rendre le compte rendu qui vous servira de (cours / fiche de révision) du TP avant mardi 16 mars 23h59.
+
+
+## 0. Les conteneurs c'est quoi ?
+
+Faire un schéma rapide pour comprendre et expliquer la différence entre conteneur et VM ? (3' à 5'). https://www.youtube.com/watch?v=caXHwYC3tq8
+
+C'est quoi un micro-service ? https://youtu.be/ucHwp1jUS2w
+
+Quel est l'avantage d'utiliser les conteneurs dans une approche Microservice?
+
+(PS: C'est quoi de regarder des videos sur youtube en cours?)
 
 ## 1. Installation
 
