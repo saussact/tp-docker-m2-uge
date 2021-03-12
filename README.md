@@ -87,37 +87,6 @@ Que fais cette commande ?
 
 Quelle différence etre un conteneur et une image Docker ?
 
-## 3. Découverte
-
-
-`$ docker ps -a`
-
-Normalement on voit le docker hello world
-
-`$ docker run -it --rm ubuntu:xenial /bin/bash`
-
-Puis depuis un autre terminal on lance :
-
-`$ docker ps`
-
-Quelle est la différence par rapport à tout à l'heure ?
-
-Dans le conteneur on lance :
-
-`# ps faux`
-
-Que remarque-t-on ?
-
-Puis on quite le conteneur :
-
-`# exit`
-
-Puis à nouveau 
-
-`$ docker ps -a`
-
-Que remarque-t-on ? à quoi est-ce dû ?
-
 ## 3. Déployer un Wordpress / Jouer avec les images
 
 
