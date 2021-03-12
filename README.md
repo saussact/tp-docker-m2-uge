@@ -1,7 +1,7 @@
 # TP Docker M2 UGE  2021 - Module DevOps
 
 # Table of Contents
-0. [Introduction](0-les-conteneurs-c-est-quoi-?)
+0. [Introduction](#0-les-conteneurs-cest-quoi-)
 1. [Installation](#1-installation)
 2. [First step](#2-first-step)
 3. [Découverte](#3-découverte)
@@ -13,6 +13,7 @@
 Repondre à l'ensemble des questions posés. Ce TP servira de cours, c'est à vous d'aller chercher les notions. Pour comprendre les thématiques abordés.
 Rendre le compte rendu qui vous servira de (cours / fiche de révision) du TP avant mardi 16 mars 23h59.
 
+Vous pouvez créer un branche via master exemple : feature/<NomPrenom>
 
 ## 0. Les conteneurs c'est quoi ?
 
