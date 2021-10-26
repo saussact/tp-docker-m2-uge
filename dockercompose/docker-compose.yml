@@ -1,44 +1,37 @@
-version: '3'
-
+version: "3"
 services:
   app:
     build: ../dockerfile/
     ports:
       - 8089:8080
-
-  wordpress:
-    image: wordpress
-    depends_on:
-      - mysql
-    ports:
-      - 8090:80
-    environment:
-      WORDPRESS_DB_HOST: mysql
-      WORDPRESS_DB_USER: exampleuser
-      WORDPRESS_DB_PASSWORD: examplepass
-      WORDPRESS_DB_NAME: exampledb
-    volumes:
-      - wordpress:/var/www/html
-    networks:
-      - web
-
-  mysql:
+  my_database:
     image: mysql
+    restart: always
     environment:
-      MYSQL_USER: exampleuser
-      MYSQL_PASSWORD: examplepass
-      MYSQL_DATABASE: exampledb
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: my_password_1234789
+      MYSQL_DATABASE: my_wp_database
+      MYSQL_USER: my_wp_user
+      MYSQL_PASSWORD: my_wp_user_password
     volumes:
       - mysql:/var/lib/mysql
-    networks:
-      - web
+
+  wordpress:
+    depends_on:
+      - my_database
+    image: wordpress:latest
+    restart: always
+    ports:
+      - "8090:80"
+    environment:
+      WORDPRESS_DB_HOST: my_database:3306
+      WORDPRESS_DB_USER: my_wp_user
+      WORDPRESS_DB_PASSWORD: my_wp_user_password
+      WORDPRESS_DB_NAME: my_wp_database
+    volumes:
+      - wordpress:/var/www/html
 
 volumes:
   wordpress:
     driver: local
   mysql:
     driver: local
-networks:
-  web:
-    driver: bridge
