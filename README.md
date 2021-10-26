@@ -92,11 +92,10 @@ Quelle différence etre un conteneur et une image Docker ?
 
 Pour déployer wordpress il faut (cas simple) ?
 
-    1) 1 réseau
-    2) 2 volumes
+    1) 2 volumes
         1 pour wordpress
         1 pour mysql
-    3) 2 conteneurs
+    2) 2 conteneurs
         1 conteneur wordpress
         1 conteneur mysql
 
@@ -132,12 +131,12 @@ https://hub.docker.com/_/wordpress/
 
 Dans quel ordre devont nous démarrer nos services ?
 
-`$ docker run -it --rm --net web -v mysql:/var/lib/mysql -e MYSQL_DATABASE=wordpressdb -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wppassword -e MYSQL_ROOT_PASSWORD=root --name mysql -d mysql:latest`
+`$  docker run -e MYSQL_ROOT_PASSWORD=12345 -e MYSQL_DATABASE=wordpress --name wordpressdb -v database:/var/lib/mysql -d mariadb:latest`
 
 
 Vérifier que le conteneur MySQL est bien lancé :)
 
-`$ docker run -it --net web --rm -v wordpress:/var/www/html -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=wppassword -e WORDPRESS_DB_NAME=wordpressdb -p 8090:80 --name wordpress -d wordpress:latest`
+`$ docker run -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=12345 --name wordpress --link wordpressdb:mysql -p 8090:80 -v html:/var/www/html -d wordpress`
 
 Vérifier que le conteneur WP est bien lancé :)
 
