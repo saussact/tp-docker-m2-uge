@@ -11,7 +11,7 @@
 ## Rendu :
 
 Repondre à l'ensemble des questions posés. Ce TP servira de cours, c'est à vous d'aller chercher les notions. Pour comprendre les thématiques abordés.
-Rendre le compte rendu qui vous servira de (cours / fiche de révision) du TP avant mardi 16 mars 23h59.
+Rendre le compte rendu le dimanche 23h59 suivant le TP, tout retard sera un 0.
 
 Vous pouvez créer un branche via master exemple : feature/<NomPrenom>
 
