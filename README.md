@@ -102,8 +102,6 @@ Pour déployer wordpress il faut (cas simple) ?
 
 On va donc créer tout ca : 
 
-`$ docker network create web`
-
 `$ docker volume create wordpress`
 
 `$ docker volume create mysql`
