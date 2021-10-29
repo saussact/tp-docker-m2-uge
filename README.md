@@ -23,8 +23,6 @@ C'est quoi un micro-service ? https://youtu.be/ucHwp1jUS2w
 
 Quel est l'avantage d'utiliser les conteneurs dans une approche Microservice?
 
-(PS: C'est quoi de regarder des videos sur youtube en cours?)
-
 ## 1. Installation
 
 Au vu de l'evolution TRES rapide de docker, l'ideal est de ce rendre sur la doc officiel de Docker :
