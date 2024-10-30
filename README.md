@@ -1,4 +1,4 @@
-# TP Docker M2 UGE  2021 - Module DevOps
+# TP Docker M2 UGE  2024 - Module DevOps
 
 # Table of Contents
 0. [Introduction](#0-les-conteneurs-cest-quoi-)
@@ -11,7 +11,7 @@
 ## Rendu :
 
 Repondre à l'ensemble des questions posés. Ce TP servira de cours, c'est à vous d'aller chercher les notions. Pour comprendre les thématiques abordés.
-Rendre le compte rendu le dimanche 23h59 suivant le TP, tout retard sera un 0.
+Rendre le compte rendu est à rendre à la fin du TP.
 
 Vous pouvez créer un branche via master exemple : feature/<NomPrenom>
 
